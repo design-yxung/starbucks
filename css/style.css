@@ -1,0 +1,80 @@
+/* 폰트 */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap');
+
+/* 브라우저 환경 재설정 */
+*{padding: 0; margin: 0; box-sizing: border-box;}
+a{text-decoration: none; color: inherit;}
+ul,li{list-style: none;}
+button{cursor: pointer;}
+
+/* 기본 설정 */
+.w1000{width: 1000px; margin: 0 auto;}
+:root{
+    --main-c: #036635;
+    --sub-c: #5d9177;
+    --pro-bg: #16302A;
+}
+
+/* 웹 레이아웃 및 스타일 설정 */
+body,html{min-width: 1600px;}
+/* ─── header ─── */
+header{
+    width: 100%; height: 120px;
+}
+#headWrap{
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+#headWrap #logo{
+    height: 100px; aspect-ratio: 1/1;
+}
+#headWrap #logo img{
+    height: 100%;
+}
+
+/* ─── footer ─── */
+footer{
+    width: 100%; height: 140px;
+    margin-top: 100px;
+    background-color: #505050;
+    font-size: 12px;
+    color: #fff;
+    font-family: "Inter", sans-serif;
+}
+#footWrap{
+    position: relative;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#footWrap .coffeeImg{
+    width: 230px; aspect-ratio: 1/1;
+    transform: translateY(-23%);
+}
+#footWrap .coffeeImg>img{
+    width: 100%;
+}
+/* copyright */
+
+/* link */
+footer .link{
+    margin-left: 75px;
+}
+footer .link>ul{
+    display: flex;
+}
+footer .link>ul>li:not(:last-child){
+    position: relative;
+    margin-right: 25px;
+}
+footer .link>ul>li:not(:last-child)::after{
+    content: '';
+    position: absolute;
+    top: 50%; right: -12px;
+    transform: translateY(-50%);
+    display: inline-block;
+    width: 1px; height: 10px;
+    background-color: #fff;
+}
